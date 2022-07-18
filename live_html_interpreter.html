@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>HTML interpreter</title>
+    <link rel="stylesheet" href="live_html_interpreter.css">
+    <script>
+    function lw()
+    {
+      Body=document.getElementById("1")
+      Code=document.getElementById("2")
+      Code.innerHTML=Body.value;
+    }
+    </script>
+</head>
+<body>
+    <h1 style="color:aliceblue ;">HTML LIVE INTERPRETER</h1>
+    <Marquee>GO AHEAD!!!!!!</Marquee>
+        <div class="page">
+            <div class="code">
+                
+                <textarea  id="1" cols="80" rows="30" onkeyup="lw()">ENTER THE HTML CODE HERE</textarea>
+            </div>
+
+            <div class="body">
+                
+                <div id="2" class="interpreter" style="border:thick ;" ></div>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <button id="btn">Clear textarea</button>
+            <script src="index.js"></script>
+        </div>
+</body>
+</html>
